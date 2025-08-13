@@ -15,6 +15,7 @@ function App() {
 
   return (
     <div className="app-container">
+      <h1 className="mainText">Desserts</h1>
       <ProductList products={products} />
       <Cart />
     </div>

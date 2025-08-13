@@ -18,6 +18,8 @@
   padding: 10px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 5rem;
 }
 
 .product-card img {
@@ -39,6 +41,7 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .add-btn:hover {
@@ -71,4 +74,9 @@
 
 .cart-controls span {
   margin: 0 8px;
+}
+
+.mainText {
+  position: relative;
+  left: 8.5rem;
 }
