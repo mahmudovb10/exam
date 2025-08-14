@@ -42,6 +42,7 @@ export default function Cart() {
                 <hr className="basketHr" />
               </div>
               <button
+                className="prodDisable"
                 onClick={() =>
                   dispatch({ type: "REMOVE_FROM_CART", payload: item.id })
                 }
@@ -52,8 +53,8 @@ export default function Cart() {
           ))}
 
           <div className="cart-total">
-            <span>Order Total: </span>
-            <span>${totalPrice}</span>
+            <span className="order-total">Order Total: </span>
+            <span className="order-price">${totalPrice}</span>
           </div>
 
           <button

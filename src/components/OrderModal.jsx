@@ -1,17 +1,36 @@
 export default function OrderModal({ cart, onClose, onConfirm }) {
+  // Umumiy narxni hisoblash
+  const totalPrice = cart
+    .reduce((sum, item) => sum + item.price * item.amount, 0)
+    .toFixed(2);
+
   return (
     <div style={styles.overlay}>
       <div style={styles.modal}>
-        <h2>Order Confiremed</h2>
+        <img
+          className="modalImg"
+          src="/images/icon-order-confirmed.svg"
+          alt=""
+        />
+        <h2>Order Confirmed</h2>
+        <p>We hope you enjoy your food!</p>
+
+        {/* Xarid qilingan mahsulotlar ro'yxati */}
         {cart.map((item) => (
           <p key={item.id}>
             {item.name} × {item.amount} — $
             {(item.price * item.amount).toFixed(2)}
           </p>
         ))}
+
+        {/* Umumiy narx */}
+        <hr style={{ margin: "10px 0" }} />
+        <h3>Total: ${totalPrice}</h3>
+
         <div style={styles.buttons}>
-          <button onClick={onClose}>Cancel</button>
-          <button onClick={onConfirm}>Confirm</button>
+          <button className="modalBtn" onClick={onConfirm}>
+            Start New Order
+          </button>
         </div>
       </div>
     </div>
@@ -40,7 +59,7 @@ const styles = {
   },
   buttons: {
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "center",
     marginTop: "20px",
   },
 };

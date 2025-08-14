@@ -238,14 +238,56 @@
   color: #fff;
   background-color: transparent;
   border: none;
+  position: relative;
+  left: 1.5rem;
+  top: 0.1rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .minus {
   color: #fff;
   background-color: transparent;
   border: none;
+  position: relative;
+  right: 1.5rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .prodAmount {
   color: #fff;
+}
+
+.prodDisable {
+  border: 1px solid #ad8a85;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  color: #ad8a85;
+}
+
+.order-price {
+  display: flex;
+  justify-content: flex-end;
+  font-size: large;
+  font-weight: bold;
+}
+.order-total {
+  position: relative;
+  top: 1rem;
+}
+
+.modalBtn {
+  width: 100%;
+  background: #c73b0f;
+  color: #fff;
+  border: none;
+  border-radius: 10rem;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 12px;
+  cursor: pointer;
 }
