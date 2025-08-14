@@ -18,12 +18,13 @@
 
 .product-card {
   background: #fff;
-  border: 1px solid #ddd;
+  border: none;
   border-radius: 8px;
   padding: 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
+  height: 20rem;
 }
 
 .product-card picture img {
@@ -40,22 +41,34 @@
 .price {
   font-weight: bold;
   font-size: 14px;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
+  position: relative;
+  top: -1rem;
+  right: 5rem;
+  color: #c73b0f;
+}
+
+.priceBasket {
+  position: relative;
+}
+
+.amountBasket {
+  color: #c73b0f;
 }
 
 .add-btn {
+  width: 160px;
   margin-top: auto;
-  background: #ff6600;
-  color: #fff;
-  border: none;
+  background: #ffffff;
+  color: #260f08;
+  border: 1px solid #ad8a85;
+  border-radius: 10rem;
   padding: 6px 10px;
   font-size: 13px;
-  border-radius: 5px;
   cursor: pointer;
-}
-
-.add-btn:hover {
-  background: #e65c00;
+  position: relative;
+  bottom: 8.5rem;
+  left: 1.2rem;
 }
 
 .cart-container {
@@ -66,7 +79,7 @@
   padding: 12px;
   font-size: 14px;
   position: relative;
-  top: 5rem;
+  top: 1rem;
 }
 
 .cart-title {
@@ -98,4 +111,141 @@
 .mainText {
   position: relative;
   left: 8.5rem;
+}
+
+.name {
+  position: relative;
+  top: -0.5rem;
+  display: flex;
+  justify-items: start;
+}
+
+.btn-img {
+  position: relative;
+  top: 0.3rem;
+  right: 0.5rem;
+}
+
+.prod-category {
+  width: 7rem;
+  height: 10px;
+  color: #87635a;
+  position: relative;
+  top: 1rem;
+  display: flex;
+  justify-items: start;
+}
+
+.cartImg {
+  position: relative;
+  left: 5rem;
+}
+
+.basketText {
+  width: 336px;
+  height: 19px;
+  position: relative;
+  left: 3.2rem;
+  color: #87635a;
+}
+
+.basketHr {
+  width: 336px;
+  color: #f5eeec;
+}
+
+.add-btn {
+  width: 160px;
+  height: 35px;
+  margin-top: auto;
+  border-radius: 10rem;
+  position: relative;
+  bottom: 8.5rem;
+  left: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-cart-btn {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  color: #260f08;
+  border: 1px solid #ad8a85;
+  border-radius: 10rem;
+  padding: 6px 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.counter {
+  width: 123px;
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #ad8a85;
+  border-radius: 10rem;
+}
+
+.counter button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+.confirm-order-btn {
+  width: 100%;
+  background: #c73b0f;
+  color: #fff;
+  border: none;
+  border-radius: 10rem;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.confirm-order-btn:hover {
+  background: #a8320d;
+}
+
+.basketTitle {
+  color: #c73b0f;
+}
+
+.prodBtn {
+  width: 130px;
+  height: 6rem;
+  position: relative;
+  bottom: 8.5rem;
+  left: 2rem;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 10rem;
+  background-color: #c73b0f;
+}
+
+.plus {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+.minus {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+.prodAmount {
+  color: #fff;
 }
