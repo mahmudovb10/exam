@@ -291,3 +291,14 @@
   margin-top: 12px;
   cursor: pointer;
 }
+.modalDesc {
+  color: #87635a;
+}
+
+.moadlText {
+  font-weight: bold;
+}
+
+.ordertot {
+  background-color: #fcf8f6;
+}

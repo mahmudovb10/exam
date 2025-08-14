@@ -1,5 +1,4 @@
 export default function OrderModal({ cart, onClose, onConfirm }) {
-  // Umumiy narxni hisoblash
   const totalPrice = cart
     .reduce((sum, item) => sum + item.price * item.amount, 0)
     .toFixed(2);
@@ -12,18 +11,18 @@ export default function OrderModal({ cart, onClose, onConfirm }) {
           src="/images/icon-order-confirmed.svg"
           alt=""
         />
-        <h2>Order Confirmed</h2>
-        <p>We hope you enjoy your food!</p>
+        <h2 className="modalText">Order Confirmed</h2>
+        <p className="modalDesc">We hope you enjoy your food!</p>
 
-        {/* Xarid qilingan mahsulotlar ro'yxati */}
-        {cart.map((item) => (
-          <p key={item.id}>
-            {item.name} × {item.amount} — $
-            {(item.price * item.amount).toFixed(2)}
-          </p>
-        ))}
+        <div className="ordertot">
+          {cart.map((item) => (
+            <p key={item.id}>
+              {item.name} × {item.amount} — $
+              {(item.price * item.amount).toFixed(2)}
+            </p>
+          ))}
+        </div>
 
-        {/* Umumiy narx */}
         <hr style={{ margin: "10px 0" }} />
         <h3>Total: ${totalPrice}</h3>
 
