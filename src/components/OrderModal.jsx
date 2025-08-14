@@ -2,7 +2,7 @@ export default function OrderModal({ cart, onClose, onConfirm }) {
   return (
     <div style={styles.overlay}>
       <div style={styles.modal}>
-        <h2>Order Summary</h2>
+        <h2>Order Confiremed</h2>
         {cart.map((item) => (
           <p key={item.id}>
             {item.name} × {item.amount} — $
